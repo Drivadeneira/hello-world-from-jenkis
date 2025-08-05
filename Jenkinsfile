@@ -23,5 +23,11 @@ pipeline {
                 sh 'nohup npm start &'
             }
         }
+
+        stage('Show App Info') {
+            steps {
+                echo 'This is your app! Access it at: http://localhost:3000'
+            }
+        }
     }
 }
